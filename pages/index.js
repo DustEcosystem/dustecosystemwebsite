@@ -13,8 +13,8 @@ export default function Home() {
         <link href="//db.onlinewebfonts.com/c/f05f148ec6596f0b75375fa566aaf1fe?family=Bely" rel="stylesheet" type="text/css"/>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@DeGodsNFT" />
-        <meta name="twitter:title" content="DeBuilders" />
-        <meta name="twitter:description" content="From the DeGods who built cool sh*t" />
+        <meta name="twitter:title" content="DustEcosystem" />
+        <meta name="twitter:description" content="$DUST, a useless token that everyone on Solana uses" />
         <meta name="twitter:image" content="/dustecosystem.jpg" />
       </Head>
       <Navbar />
