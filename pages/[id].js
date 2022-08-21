@@ -50,22 +50,26 @@ const ProjectPage = ({projectData}) => {
                                     <p className="text-lg selectionColor">Twitter</p>  
                                 </div>
                             </a>
+                            {
+                                projectData.discord && (
+                                    <a 
+                                        href={`${projectData.discord}`}
+                                        target="blank"
+                                    >
+                                        <div className="flex justify-center items-center gap-1 text-white bg-[#5B66F6] py-1 px-3 rounded-full hover:shadow-[3.0px_3.0px_rgba(91,102,246,0.5)] transition ease-in-out hover:-translate-y-1 duration-300">
+                                            <Image 
+                                                src={TwitterLogo}
+                                                alt="Twitter logo"
+                                                width={16}
+                                                height={16}
+                                            />
+                                            <p className="text-lg selectionColor">Discord</p>  
+                                        </div>
+                                    </a>
+                                )
+                            }
                             <a 
-                                href={`${projectData.discord}`}
-                                target="blank"
-                            >
-                                <div className="flex justify-center items-center gap-1 text-white bg-[#5B66F6] py-1 px-3 rounded-full hover:shadow-[3.0px_3.0px_rgba(91,102,246,0.5)] transition ease-in-out hover:-translate-y-1 duration-300">
-                                    <Image 
-                                        src={TwitterLogo}
-                                        alt="Twitter logo"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <p className="text-lg selectionColor">Discord</p>  
-                                </div>
-                            </a>
-                            <a 
-                                href={`${projectData.discord}`}
+                                href={`${projectData.link}`}
                                 target="blank"
                             >
                                 <div className="flex justify-center items-center gap-1 text-white bg-[#242424] py-1 px-4 rounded-full hover:shadow-[3.0px_3.0px_rgba(255,255,255,0.2)] transition ease-in-out hover:-translate-y-1 duration-300">

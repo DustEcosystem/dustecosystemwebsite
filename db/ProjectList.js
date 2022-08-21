@@ -14,7 +14,8 @@ const projectList = [
         "image": FamousFox,
         "categories":["coinflip","raffle"],
         "link":"https://famousfoxes.com/",
-        "twitter":"https://twitter.com/FamousFoxFed"
+        "twitter":"https://twitter.com/FamousFoxFed",
+        "discord":"https://discord.com/invite/famousfoxes"
     },
     {
         "id":"vandal_city",
@@ -23,7 +24,8 @@ const projectList = [
         "image": VandalCityImg,
         "categories":["raffle"],
         "link":"https://www.vandalcity.io/",
-        "twitter":"https://twitter.com/VandalCityCorp"
+        "twitter":"https://twitter.com/VandalCityCorp",
+        "discord":"https://discord.com/invite/vandalcitycorp"
     },
     {
         "id":"deBeans_roaster",
@@ -32,7 +34,7 @@ const projectList = [
         "image": DebeanRoasterImg,
         "categories":["product"],
         "link":"https://www.debeans.xyz/",
-        "twitter":"https://twitter.com/DeBeansRoaster"
+        "twitter":"https://twitter.com/DeBeansRoaster",
     },
     {
         "id":"degen_picks",
@@ -41,7 +43,8 @@ const projectList = [
         "image": DegenPicksImg,
         "categories":["game"],
         "link":"https://www.degenpicks.xyz/",
-        "twitter":"https://twitter.com/degenpicksXYZ"
+        "twitter":"https://twitter.com/degenpicksXYZ",
+        "discord":"https://discord.com/invite/ZvH7z4ZkZG"
     },
     {
         "id": "degods_display",
@@ -59,7 +62,8 @@ const projectList = [
         "image": PsyOptionsImg,
         "categories": ["Defi"],
         "link":"https://www.psyfi.io/vaults",
-        "twitter":"https://twitter.com/PsyOptions"
+        "twitter":"https://twitter.com/PsyOptions",
+        "discord":"https://discord.com/invite/Ew3dq7dKwp"
     },
     {
         "id": "vault_x",
@@ -68,7 +72,8 @@ const projectList = [
         "image": VaultXImg,
         "categories":["product"],
         "link":"https://thevault-x.com/",
-        "twitter":"https://twitter.com/TheVaultDAO"
+        "twitter":"https://twitter.com/TheVaultDAO",
+        "discord":"https://discord.com/invite/CaSVfkCbvc"
     },
 ]
 
