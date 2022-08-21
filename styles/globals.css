@@ -10,4 +10,10 @@
   .fontFamily{
     font-family: 'Share Tech Mono', monospace;
   }
+  .shadowAndTransition{
+    @apply hover:shadow-[4.0px_4.0px_rgba(255,255,255,0.2)] transition ease-in-out hover:-translate-y-2 duration-300
+  }
+  .selectionColor{
+    @apply selection:bg-[#90B578] selection:text-white
+  }
 }
