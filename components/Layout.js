@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from "./Navbar"
 
-const Layout = ({ children, title = 'Dust Ecosystem' }) => {
+const Layout = ({ children, title = 'Dust Ecosystem', showApplyBtn = true }) => {
     return (
         <div className="debackground h-screen overflow-auto">
             <Head>
@@ -22,7 +22,7 @@ const Layout = ({ children, title = 'Dust Ecosystem' }) => {
                 <meta name="twitter:image" content="https://i.imgur.com/LVsJYp8.jpeg" />
             </Head>
             <div className="w-full max-w-[1600px] mx-auto">
-                <Navbar />
+                <Navbar showApplyBtn={showApplyBtn}/>
                 {children}
             </div>
         </div>
