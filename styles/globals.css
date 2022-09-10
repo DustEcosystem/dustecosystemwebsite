@@ -16,4 +16,10 @@
   .selectionColor{
     @apply selection:bg-[#90B578] selection:text-white
   }
+  .input-container{
+    @apply flex flex-col relative gap-1 mb-4 pb-4
+  }
+  .input{
+    @apply bg-[#242424] text-lg py-3 px-5 rounded-lg text-white outline-none
+  }
 }

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import TwitterLogo from "../public/twitter.svg"
 import { useRouter } from "next/router";
 
-const Navbar = ({showApplyBtn}) => {
+const Navbar = ({showSubmitProjectBtn}) => {
     const router = useRouter();
 
     return (
@@ -18,12 +18,12 @@ const Navbar = ({showApplyBtn}) => {
                 </div>
             </a>
             <div className="flex gap-5 items-center">
-                {showApplyBtn ? (
+                {showSubmitProjectBtn ? (
                     <button 
                         className="flex justify-center items-center gap-1 text-white bg-[#90B578] py-2 px-5 rounded-full hover:shadow-[3.0px_3.0px_rgba(144,181,120,0.5)] transition ease-in-out hover:-translate-y-1 duration-300"
-                        onClick={() => router.push(`/apply`)}
+                        onClick={() => router.push(`/submit-project`)}
                     >
-                        <p className="text-lg selectionColor">Apply</p> 
+                        <p className="text-lg selectionColor">Submit Project</p> 
                     </button>
                 ) : ""}
                 <div className="flex justify-center items-center mt-2">
