@@ -1,23 +1,37 @@
-import FamousFox from "../public/famousfox.jpg"
-import VandalCityImg from "../public/vandal_city.png"
-import DebeanRoasterImg from "../public/debeansroaster.png"
-import DegenPicksImg from "../public/degenpicks.png"
-import DegodsDisplayImg from "../public/degodsdisplay.jpg"
-import PsyOptionsImg from "../public/PsyOptions.png"
-import VaultXImg from "../public/vaultx.jpg"
+// Components And Hooks
+import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard"
-import projectList from "../db/ProjectList"
+import Loading from "./Loading";
+
+// firebase Database
+import { db } from "../firebase";
+import { onSnapshot, collection, query, where } from "@firebase/firestore";
+
 
 const ProjectSection = () => {
+    const [projectsDatabase, setProjectsDatabase] = useState()
+
+    useEffect(() => ( 
+        onSnapshot(
+            query(collection(db, "projectsDatabase"),where("status","==","Live")),
+            (snapshot) => {
+                setProjectsDatabase(snapshot.docs);
+            }
+        )
+    ),[db]);
+
     return (
         <div className='py-5 px-4 sm:px-8 lg:px-12 xl:px-36'>
-            <h1 className="text-5xl text-white fontFamily pt-6 pb-9 selectionColor">Discover the hottest projects</h1>
+            <h1 className="text-3xl md:text-4xl text-white fontFamily pt-3 pb-3 selectionColor">Discover the hottest projects</h1>
+            <div className="border-t border-white w-full pb-9"></div>
             <div className="flex flex-wrap justify-center gap-6">
-                {projectList.map((project) => {
-                    return (
-                        <ProjectCard projectInfo={project} key={project.id}/>
-                    )
-                })}
+                {projectsDatabase ? (
+                    projectsDatabase.map((project) => (
+                        <ProjectCard projectInfo={project.data()} key={project.id} id={project.id} />
+                    ))
+                ):(
+                    <Loading height={"50vh"} />
+                )}
             </div>
         </div>
     )
