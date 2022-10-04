@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
-const Layout = ({ children, title = 'Dust Ecosystem', showSubmitProjectBtn = true, showFooter = true, showUpcomingBtn = true }) => {
+const Layout = ({ children, title, showSubmitProjectBtn = true, showFooter = true, showUpcomingBtn = true }) => {
     return (
         <div className="debackground min-h-screen overflow-auto">
             <Head>

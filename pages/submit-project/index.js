@@ -490,12 +490,8 @@ const submitProject = ({providers}) => {
                                                 name="discordURL"
                                                 className={`input ${errors.discordURL ? "border-2 border-[#ff5252]" : ""}`}
                                                 placeholder="https://discord.com/invite/project"
-                                                autocomplete="off"
+                                                autoComplete="off"
                                                 {...register("discordURL",{
-                                                    required: {
-                                                        value: true,
-                                                        message: "Required",
-                                                    },
                                                     pattern: {
                                                         value: /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/,
                                                         message: "Insert a valid URL",
