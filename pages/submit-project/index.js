@@ -39,7 +39,7 @@ export async function getServerSideProps(context) {
     };
 }
 
-const submitProject = ({providers}) => {
+const SubmitProject = ({providers}) => {
     const  {data: session} = useSession();
     const { register, formState: {errors, isValid}, getValues} = useForm({
         mode:"all",
@@ -579,4 +579,4 @@ const submitProject = ({providers}) => {
     )
 }
 
-export default submitProject
+export default SubmitProject

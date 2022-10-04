@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
     };
 }
 
-const signInPage = ({providers}) => {
+const SignInPage = ({providers}) => {
     const router = useRouter()
     const { projectID } = router.query
     const  {data: session} = useSession();
@@ -65,4 +65,4 @@ const signInPage = ({providers}) => {
     )
 }
 
-export default signInPage
+export default SignInPage

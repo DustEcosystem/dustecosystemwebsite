@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 import { db } from "../firebase";
 import { onSnapshot, collection, query, where } from "@firebase/firestore";
 
-const upcoming = () => {
+const Upcoming = () => {
     const [projectsDatabase, setProjectsDatabase] = useState()
 
     // useEffect(() => (
@@ -39,4 +39,4 @@ const upcoming = () => {
     )
 }
 
-export default upcoming
+export default Upcoming
