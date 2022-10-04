@@ -1,6 +1,7 @@
 import Statistics from '../components/Statistics'
 import Layout from "../components/Layout"
 import ProjectSection from '../components/ProjectsSection'
+import PopularProjectSection from "../components/PopularProjectSection"
 
 export async function getServerSideProps(context) {
     let resDustPrice = await fetch('https://price.jup.ag/v1/price?id=DUSTawucrTsGU8hcqRdHDCbuYhCPADMLM2VcCb8VnFnQ&vsToken=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v')
@@ -13,10 +14,10 @@ export async function getServerSideProps(context) {
 }
 
 export default function Home({dustPrice}) {
-
     return (
-        <Layout>
+        <Layout title={"Home"}>
             <Statistics dustPrice={dustPrice} />
+            <PopularProjectSection />
             <ProjectSection />
         </Layout>
     )
