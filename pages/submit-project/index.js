@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router'
 import { useForm } from "react-hook-form"
 import { getProviders, getSession, useSession, signOut} from "next-auth/react";
-import Login from "../../components/login";
+import Login from "../../components/Login";
 import Layout from "../../components/Layout";
 
 // firebase database

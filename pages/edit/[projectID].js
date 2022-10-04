@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form"
 import { useState, useRef } from "react";
 import { getProviders, getSession, useSession } from "next-auth/react";
 import Layout from "../../components/Layout";
-import Login from "../../components/login";
+import Login from "../../components/Login";
 import ErrorPage from "../../components/ErrorPage";
 
 // Firebase Database
