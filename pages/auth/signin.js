@@ -28,6 +28,7 @@ const SignInPage = ({providers}) => {
 
     if(session && typeof window !== 'undefined') {
         window.close()
+        window.opener.location.reload()
     }
 
     return (
