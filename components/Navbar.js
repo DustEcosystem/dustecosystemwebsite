@@ -81,9 +81,7 @@ const NavBar = ({showSubmitProjectBtn = true, showUpcomingBtn = true }) => {
                                     </a>
                                 </div>
                             </div>
-                            {session && (
-                                <MenuComponent />
-                            )}
+                            <MenuComponent />
                         </div>
                     </div>
                 </div>
