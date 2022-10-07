@@ -115,7 +115,7 @@ const ProjectPage = ({projectDataStr}) => {
                             <h1 className="text-3xl font-bold text-white selectionColor fontFamily mt-1 text-center md:text-left mb-2">
                                 {projectData.projectName}
                             </h1>
-                            <p className="text-xl selectionColor text-center md:text-left">
+                            <p className="text-xl selectionColor text-center md:text-left max-w-2xl">
                                 {projectData.description}
                             </p>
                         </div>
@@ -186,7 +186,7 @@ const ProjectPage = ({projectDataStr}) => {
                             <h1 className="text-2xl font-bold text-white selectionColor fontFamily mb-1">
                                 $DUST Usage Information
                             </h1>
-                            <p className="text-lg selectionColor">
+                            <p className="text-lg selectionColor max-w-2xl">
                                 {projectData.dustUsageDescription}
                             </p>
                         </div>
