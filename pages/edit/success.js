@@ -36,7 +36,7 @@ const Success = () => {
     const { projectName, slug } = router.query
 
     return (
-        <Layout showSubmitProjectBtn={false} showFooter={false}>
+        <Layout showSubmitProjectBtn={false} showFooter={false} title={`${projectName} Success`}>
             <Confetti
                 width={width}
                 height={height}
